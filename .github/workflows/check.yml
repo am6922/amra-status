@@ -1,0 +1,29 @@
+name: Uptime check
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: data
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: git fetch --depth=1 origin main && git show FETCH_HEAD:check.mjs > check.mjs
+      - run: node check.mjs
+      - run: |
+          git config user.name "amra-status"
+          git config user.email "status@amra.consulting"
+          git add status.json history.json
+          git commit -m "status $(date -u +%FT%TZ)" || exit 0
+          git push
