@@ -1,33 +1,37 @@
 {
- "checkedAt": "2026-11-08T20:21:12.848Z",
+ "checkedAt": "2026-11-08T20:58:01.310Z",
  "services": [
   {
    "id": "website",
    "name": "amra.consulting website",
-   "ok": true,
-   "code": 200,
-   "ms": 649
+   "ok": false,
+   "code": 0,
+   "ms": 10494,
+   "error": "fetch failed"
   },
   {
    "id": "app",
    "name": "CRM app (app.amra.consulting)",
-   "ok": true,
-   "code": 200,
-   "ms": 1082
+   "ok": false,
+   "code": 0,
+   "ms": 10491,
+   "error": "fetch failed"
   },
   {
    "id": "chat",
    "name": "Website chat & forms",
-   "ok": true,
-   "code": 200,
-   "ms": 495
+   "ok": false,
+   "code": 0,
+   "ms": 10493,
+   "error": "fetch failed"
   },
   {
    "id": "booking",
    "name": "Booking pages",
-   "ok": true,
-   "code": 200,
-   "ms": 994
+   "ok": false,
+   "code": 0,
+   "ms": 10494,
+   "error": "fetch failed"
   }
  ]
 }
