@@ -1,33 +1,33 @@
 {
- "checkedAt": "2026-11-11T07:58:34.386Z",
+ "checkedAt": "2026-11-11T08:51:16.942Z",
  "services": [
   {
    "id": "website",
    "name": "amra.consulting website",
    "ok": true,
    "code": 200,
-   "ms": 303
+   "ms": 727
   },
   {
    "id": "app",
    "name": "CRM app (app.amra.consulting)",
    "ok": true,
    "code": 200,
-   "ms": 502
+   "ms": 589
   },
   {
    "id": "chat",
    "name": "Website chat & forms",
    "ok": true,
    "code": 200,
-   "ms": 570
+   "ms": 344
   },
   {
    "id": "booking",
    "name": "Booking pages",
    "ok": true,
    "code": 200,
-   "ms": 775
+   "ms": 500
   }
  ]
 }
